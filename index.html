@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="wordle.ico"/>
+  <title>Wordle Archive</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+  <h1 id="wordleFont">Wordle</h1>
+  <hr style="margin-left: -10px; margin-right: -10px;">
+  <p id="result" class="message"></p>
+  <div class="grid">
+    <div class="cell"><p class="display" id="display00"></p></div>
+    <div class="cell"><p class="display" id="display01"></p></div>
+    <div class="cell"><p class="display" id="display02"></p></div>
+    <div class="cell"><p class="display" id="display03"></p></div>
+    <div class="cell"><p class="display" id="display04"></p></div>
+    <div class="cell"><p class="display" id="display10"></p></div>
+    <div class="cell"><p class="display" id="display11"></p></div>
+    <div class="cell"><p class="display" id="display12"></p></div>
+    <div class="cell"><p class="display" id="display13"></p></div>
+    <div class="cell"><p class="display" id="display14"></p></div>
+    <div class="cell"><p class="display" id="display20"></p></div>
+    <div class="cell"><p class="display" id="display21"></p></div>
+    <div class="cell"><p class="display" id="display22"></p></div>
+    <div class="cell"><p class="display" id="display23"></p></div>
+    <div class="cell"><p class="display" id="display24"></p></div>
+    <div class="cell"><p class="display" id="display30"></p></div>
+    <div class="cell"><p class="display" id="display31"></p></div>
+    <div class="cell"><p class="display" id="display32"></p></div>
+    <div class="cell"><p class="display" id="display33"></p></div>
+    <div class="cell"><p class="display" id="display34"></p></div>
+    <div class="cell"><p class="display" id="display40"></p></div>
+    <div class="cell"><p class="display" id="display41"></p></div>
+    <div class="cell"><p class="display" id="display42"></p></div>
+    <div class="cell"><p class="display" id="display43"></p></div>
+    <div class="cell"><p class="display" id="display44"></p></div>
+    <div class="cell"><p class="display" id="display50"></p></div>
+    <div class="cell"><p class="display" id="display51"></p></div>
+    <div class="cell"><p class="display" id="display52"></p></div>
+    <div class="cell"><p class="display" id="display53"></p></div>
+    <div class="cell"><p class="display" id="display54"></p></div>
+  </div>
+  <div class="keyboard">
+    <button value="Q" onclick="clickButton(this)">Q</button>
+    <button value="W" onclick="clickButton(this)">W</button>
+    <button value="E" onclick="clickButton(this)">E</button>
+    <button value="R" onclick="clickButton(this)">R</button>
+    <button value="T" onclick="clickButton(this)">T</button>
+    <button value="Y" onclick="clickButton(this)">Y</button>
+    <button value="U" onclick="clickButton(this)">U</button>
+    <button value="I" onclick="clickButton(this)">I</button>
+    <button value="O" onclick="clickButton(this)">O</button>
+    <button value="P" onclick="clickButton(this)">P</button>
+    <br>
+    <button value="A" onclick="clickButton(this)">A</button>
+    <button value="S" onclick="clickButton(this)">S</button>
+    <button value="D" onclick="clickButton(this)">D</button>
+    <button value="F" onclick="clickButton(this)">F</button>
+    <button value="G" onclick="clickButton(this)">G</button>
+    <button value="H" onclick="clickButton(this)">H</button>
+    <button value="J" onclick="clickButton(this)">J</button>
+    <button value="K" onclick="clickButton(this)">K</button>
+    <button value="L" onclick="clickButton(this)">L</button>
+    <br>
+    <button id="enterButton" onclick="enter()">ENTER</button>
+    <button value="Z" onclick="clickButton(this)">Z</button>
+    <button value="X" onclick="clickButton(this)">X</button>
+    <button value="C" onclick="clickButton(this)">C</button>
+    <button value="V" onclick="clickButton(this)">V</button>
+    <button value="B" onclick="clickButton(this)">B</button>
+    <button value="N" onclick="clickButton(this)">N</button>
+    <button value="M" onclick="clickButton(this)">M</button>
+    <button value="⌫" onclick="backspace()">⌫</button>
+  </div>
+</body>
+</html>
