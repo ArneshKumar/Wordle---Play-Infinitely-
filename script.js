@@ -53,16 +53,16 @@ function enter() {
     }
     for (let i = 0; i < underlines.length; i++) {
       if (underlines[i] === "+") {
-        document.getElementById("display" + tries + i).style.backgroundColor = "#ffc425";
-        document.getElementById("display" + tries + i).style.borderColor = "#ffc425";
+        document.getElementById("display" + tries + i).style.backgroundColor = "#f5df1d";
+        document.getElementById("display" + tries + i).style.borderColor = "#f5df1d";
       }
       else if (underlines[i] === "-") {
-        document.getElementById("display" + tries + i).style.backgroundColor = "gray";
-        document.getElementById("display" + tries + i).style.borderColor = "gray";
+        document.getElementById("display" + tries + i).style.backgroundColor = "#8a8a8a";
+        document.getElementById("display" + tries + i).style.borderColor = "#8a8a8a";
       }
       else {
-        document.getElementById("display" + tries + i).style.backgroundColor = "#019a01";
-        document.getElementById("display" + tries + i).style.borderColor = "#019a01";
+        document.getElementById("display" + tries + i).style.backgroundColor = "#2fe03b";
+        document.getElementById("display" + tries + i).style.borderColor = "#2fe03b";
       }
     }
     if (letters[0] === randomWord && tries >= 0) {
